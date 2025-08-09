@@ -39,7 +39,7 @@ defineProps({
                 </span>
             </div>
             <!-- Subtitle on a new line for better readability -->
-            <p class="text-gray-500 text-sm mt-1">{{ project.subtitle }}</p>
+            <p class="text-neutral-500 text-sm mt-1">{{ project.subtitle }}</p>
 
             <ul class="mt-4 space-y-2 list-disc list-inside text-gray-300">
                 <li v-for="point in project.description" :key="point">
