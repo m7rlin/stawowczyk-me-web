@@ -1,5 +1,4 @@
 <script setup>
-// Define the props that this component accepts
 defineProps({
     project: {
         type: Object,

@@ -15,10 +15,3 @@
         </UContainer>
     </div>
 </template>
-
-<style>
-/* Using a common font like Inter for a clean look */
-body {
-    font-family: 'Inter', sans-serif;
-}
-</style>

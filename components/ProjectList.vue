@@ -148,7 +148,11 @@ const showMoreProjects = () => {
         </div>
 
         <div v-if="hasMoreProjects" class="text-center mt-16">
-            <UButton @click="showMoreProjects" size="lg" variant="soft"
+            <UButton
+                @click="showMoreProjects"
+                size="lg"
+                class="cursor-pointer"
+                variant="soft"
                 >Show More</UButton
             >
         </div>
