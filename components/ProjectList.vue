@@ -6,7 +6,7 @@ const allProjects = [
     {
         name: 'Doppelmayr Group',
         startDate: '2021',
-        endDate: null,
+        endDate: '2022',
         subtitle: 'Ropeway Engineering',
         url: 'https://www.doppelmayr.com/',
         description: [
@@ -17,7 +17,7 @@ const allProjects = [
     },
     {
         name: 'GSWB',
-        startDate: '2020',
+        startDate: '2021',
         endDate: '2022',
         subtitle: 'Non-Profit Housing',
         url: 'https://www.gswb.at/',
@@ -29,8 +29,8 @@ const allProjects = [
     },
     {
         name: 'Suche-Wohnung.at',
-        startDate: '2022',
-        endDate: null,
+        startDate: '2021',
+        endDate: '2022',
         subtitle: 'Real Estate Search Engine',
         url: 'https://suche-wohnung.at/',
         description: [
@@ -42,7 +42,7 @@ const allProjects = [
     {
         name: 'Plasmazentrum',
         startDate: '2021',
-        endDate: '2023',
+        endDate: '2021',
         subtitle: 'Medical & Health',
         url: 'https://www.plasmazentrum.at/',
         description: [
@@ -53,7 +53,7 @@ const allProjects = [
     },
     {
         name: 'Sankt Jakob Villach',
-        startDate: '2023',
+        startDate: '2024',
         endDate: null,
         subtitle: 'PWA & Audio Streaming',
         url: 'https://sanktjakob-villach.at/',
@@ -65,8 +65,8 @@ const allProjects = [
     },
     {
         name: 'Gachowetz Immobilien',
-        startDate: '2022',
-        endDate: '2023',
+        startDate: '2021',
+        endDate: null,
         subtitle: 'Real Estate',
         url: 'https://www.gachowetz.com/',
         description: [
@@ -77,7 +77,7 @@ const allProjects = [
     },
     {
         name: 'MagicTM',
-        startDate: '2020',
+        startDate: '2016',
         endDate: null,
         subtitle: 'E-Learning Platform',
         url: 'https://magictm.com/',
@@ -89,8 +89,8 @@ const allProjects = [
     },
     {
         name: 'MebleG',
-        startDate: '2019',
-        endDate: '2021',
+        startDate: '2022',
+        endDate: '2022',
         subtitle: 'Custom Furniture',
         url: 'https://mebleg.pl/',
         description: [
@@ -101,8 +101,8 @@ const allProjects = [
     },
     {
         name: 'Translator Klotz',
-        startDate: '2022',
-        endDate: '2022',
+        startDate: '2019',
+        endDate: '2019',
         subtitle: 'Translation Services',
         url: 'https://www.translator-klotz.com/',
         description: [

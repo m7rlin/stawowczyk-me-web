@@ -12,14 +12,14 @@ defineProps({
         <!-- Thumbnail -->
         <div class="col-span-1">
             <!-- Using a placeholder for the thumbnail -->
-            <div
+            <NuxtImg
                 class="aspect-video bg-gray-700 rounded-md flex items-center justify-center"
             >
                 <UIcon
                     name="i-heroicons-photo"
                     class="text-gray-500 text-4xl"
                 />
-            </div>
+            </NuxtImg>
         </div>
 
         <!-- Project Details -->
