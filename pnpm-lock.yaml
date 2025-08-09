@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@iconify-json/simple-icons':
+        specifier: ^1.2.46
+        version: 1.2.46
       '@nuxt/content':
         specifier: 3.6.3
         version: 3.6.3(better-sqlite3@12.2.0)(magicast@0.3.5)(vue-component-type-helpers@3.0.5)
@@ -537,6 +540,9 @@ packages:
 
   '@floating-ui/vue@1.1.8':
     resolution: {integrity: sha512-SNJAa1jbT8Gh1LvWw2uIIViLL0saV2bCY59ISCvJzhbut5DSb2H3LKUK49Xkd7SixTNHKX4LFu59nbwIXt9jjQ==}
+
+  '@iconify-json/simple-icons@1.2.46':
+    resolution: {integrity: sha512-MJfKQDhOMQD5Fc8PcTtCdFX0oBf/nKVfp69ScdEKIXW0JXELX5V2Ld45EsjShi8aJ6DNhdDtSDZvKuDnkDiKnw==}
 
   '@iconify/collections@1.0.577':
     resolution: {integrity: sha512-gQ/j93X8r3sVE6uGAZKHCZuH/U8rXJMhfPqc/HqiFlf6oo7rYb6RcmqEP8tRKxoR6t27lv+W+zWPD/8ivaRm7g==}
@@ -5607,6 +5613,10 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
+
+  '@iconify-json/simple-icons@1.2.46':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify/collections@1.0.577':
     dependencies:
