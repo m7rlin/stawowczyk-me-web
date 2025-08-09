@@ -9,6 +9,7 @@ const allProjects = [
         endDate: '2022',
         subtitle: 'Ropeway Engineering',
         url: 'https://www.doppelmayr.com/',
+        thumbnail: '/img/doppelmayr1.png',
         description: [
             'Corporate website for the global leader in ropeway and cable car technology.',
             'Features complex project showcases and multilingual content.',
@@ -21,6 +22,7 @@ const allProjects = [
         endDate: '2022',
         subtitle: 'Non-Profit Housing',
         url: 'https://www.gswb.at/',
+        thumbnail: '/img/gswb1.png',
         description: [
             "Website for Salzburg's largest non-profit housing developer.",
             'Includes a comprehensive property search and tenant portal.',
@@ -33,6 +35,7 @@ const allProjects = [
         endDate: '2022',
         subtitle: 'Real Estate Search Engine',
         url: 'https://suche-wohnung.at/',
+        thumbnail: '/img/suchewohnung1.png',
         description: [
             'A meta-search engine for rental apartments across Austria.',
             'Aggregates listings from multiple major real estate platforms.',
@@ -45,6 +48,8 @@ const allProjects = [
         endDate: '2021',
         subtitle: 'Medical & Health',
         url: 'https://www.plasmazentrum.at/',
+        thumbnail: '/img/biolife1.png',
+
         description: [
             'Platform for a leading plasma donation company in Austria.',
             'Provides essential information for donors and highlights the importance of plasma.',
@@ -54,9 +59,11 @@ const allProjects = [
     {
         name: 'Sankt Jakob Villach',
         startDate: '2024',
-        endDate: null,
+        endDate: '2024',
         subtitle: 'PWA & Audio Streaming',
         url: 'https://sanktjakob-villach.at/',
+        thumbnail: '/img/sanktjakobvillach5.png',
+
         description: [
             'Progressive Web App for the main parish church in Villach.',
             'Allows users to listen to sermons and access church news.',
@@ -66,9 +73,10 @@ const allProjects = [
     {
         name: 'Gachowetz Immobilien',
         startDate: '2021',
-        endDate: null,
+        endDate: '2021',
         subtitle: 'Real Estate',
         url: 'https://www.gachowetz.com/',
+        thumbnail: '/img/gachowetz1.png',
         description: [
             'Website for a Salzburg-based real estate and property development company.',
             'Showcases current and past residential projects.',
@@ -81,6 +89,7 @@ const allProjects = [
         endDate: null,
         subtitle: 'E-Learning Platform',
         url: 'https://magictm.com/',
+        thumbnail: '/img/magictm1.png',
         description: [
             'Online platform for learning programming and web technologies.',
             'Offers a variety of courses, tutorials, and interactive lessons.',
@@ -93,6 +102,7 @@ const allProjects = [
         endDate: '2022',
         subtitle: 'Custom Furniture',
         url: 'https://mebleg.pl/',
+        thumbnail: '/img/mebleg1.png',
         description: [
             'Website for a Polish company specializing in custom-made furniture.',
             'Features a gallery of kitchen, bathroom, and office designs.',
@@ -105,6 +115,7 @@ const allProjects = [
         endDate: '2019',
         subtitle: 'Translation Services',
         url: 'https://www.translator-klotz.com/',
+        thumbnail: '/img/translatorklotz1.png',
         description: [
             'Professional portfolio for a certified translator.',
             'Provides information on services, languages, and qualifications.',

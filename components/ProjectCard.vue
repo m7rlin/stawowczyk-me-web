@@ -14,6 +14,7 @@ defineProps({
             <!-- Using a placeholder for the thumbnail -->
             <NuxtImg
                 class="aspect-video bg-gray-700 rounded-md flex items-center justify-center"
+                :src="project.thumbnail || ''"
             >
                 <UIcon
                     name="i-heroicons-photo"
@@ -31,7 +32,11 @@ defineProps({
                 <!-- Added project dates here -->
                 <span class="text-gray-400 text-sm whitespace-nowrap">
                     {{ project.startDate
-                    }}{{ project.endDate ? `–${project.endDate}` : '–' }}
+                    }}{{
+                        !project.endDate
+                            ? '–'
+                            : `${project.startDate !== project.endDate ? '–' + project.endDate : ''}`
+                    }}
                 </span>
             </div>
             <!-- Subtitle on a new line for better readability -->
