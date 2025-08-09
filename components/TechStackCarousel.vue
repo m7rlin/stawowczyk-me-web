@@ -4,40 +4,34 @@
     >
         <!-- Fading Edges -->
         <div
-            class="pointer-events-none z-10 absolute inset-y-0 left-0 w-24 before:absolute before:inset-0 before:bg-gradient-to-r before:from-white before:to-transparent dark:before:from-gray-900 before:to-0 before:z-10"
+            class="pointer-events-none z-10 absolute inset-y-0 left-0 w-24 xl:w-1/3 before:absolute before:inset-0 before:bg-gradient-to-r before:from-white before:to-transparent dark:before:from-gray-900 before:to-0 before:z-10"
         ></div>
         <div
-            class="pointer-events-none z-10 absolute inset-y-0 right-0 w-24 after:absolute after:inset-0 after:bg-gradient-to-l after:from-white after:to-transparent dark:after:from-gray-900 after:to-0 after:z-10"
+            class="pointer-events-none z-10 absolute inset-y-0 right-0 w-24 xl:w-1/3 after:absolute after:inset-0 after:bg-gradient-to-l after:from-white after:to-transparent dark:after:from-gray-900 after:to-0 after:z-10"
         ></div>
         <!-- Carousel -->
-        <div
-            ref="sliderRef"
-            class="keen-slider"
-            :class="{
-                'is-dragging': isDragging,
-                'animate-scroll': !isDragging,
-            }"
-        >
+        <div ref="sliderRef" class="keen-slider">
             <div
                 v-for="(tech, index) in techStack"
                 :key="index"
-                class="keen-slider__slide group relative flex flex-col items-center justify-center py-2"
+                class="keen-slider__slide group relative flex flex-col items-center justify-center pb-8"
             >
                 <UIcon
                     :name="tech.icon"
                     class="text-4xl md:text-5xl text-yellow-400 dark:text-gray-500 mb-2 transition-all duration-300 group-hover:text-white group-hover:scale-110"
                 />
                 <span
-                    class="absolute -bottom-7 whitespace-nowrap text-white font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
-                    >{{ tech.name }}</span
+                    class="absolute bottom-0 whitespace-nowrap text-white font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
                 >
+                    {{ tech.name }}
+                </span>
             </div>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import KeenSlider from 'keen-slider';
+import KeenSlider, { type KeenSliderInstance } from 'keen-slider';
 import 'keen-slider/keen-slider.min.css';
 
 const isDragging = ref(false);
@@ -63,10 +57,10 @@ const techStack = [
     { name: 'Nuxt.js', icon: 'i-simple-icons-nuxtdotjs' },
 ];
 
-const sliderRef = ref(null);
-let sliderInstance = null;
+const sliderRef = ref<HTMLElement | null>(null);
+let sliderInstance: KeenSliderInstance | null = null;
 
-const animation = { duration: 30 * 1000, easing: (t) => t };
+const animation = { duration: 30 * 1000, easing: (t: number) => t };
 
 onMounted(() => {
     sliderInstance = new KeenSlider(sliderRef.value, {
@@ -74,8 +68,8 @@ onMounted(() => {
         drag: true,
 
         slides: {
-            perView: 12,
-            spacing: 24,
+            perView: 'auto', // Let the slider determine the number of slides
+            spacing: 48,
         },
         breakpoints: {
             '(max-width: 1024px)': { slides: { perView: 8, spacing: 16 } },
@@ -105,14 +99,4 @@ onBeforeUnmount(() => {
 });
 </script>
 
-<style scoped>
-/* Needed for fading edge overlays */
-.relative > .absolute:before,
-.relative > .absolute:after {
-    content: '';
-    display: block;
-    pointer-events: none;
-    height: 100%;
-    width: 100%;
-}
-</style>
+<style scoped></style>

@@ -12,7 +12,7 @@
             <TechStackCarousel />
         </section>
 
-        <UContainer class="mt-16">
+        <UContainer class="mt-8">
             <!-- Main Content -->
             <main>
                 <!-- Projects Section -->
