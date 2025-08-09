@@ -5,6 +5,12 @@
             <!-- Header Section -->
             <header class="pt-16 text-center">
                 <UserAvatar />
+
+                <!-- New Components Added Here -->
+                <div class="mt-12 space-y-8">
+                    <CallToAction />
+                    <SocialLinks />
+                </div>
             </header>
         </UContainer>
 
