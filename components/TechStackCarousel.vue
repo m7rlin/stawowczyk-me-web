@@ -1,6 +1,6 @@
 <template>
     <div
-        class="relative w-full bg-gray-900 cursor-grab active:cursor-grabbing py-8"
+        class="relative w-full dark:bg-gray-900 bg-white cursor-grab active:cursor-grabbing py-8"
     >
         <!-- Fading Edges -->
         <div
@@ -18,10 +18,10 @@
             >
                 <UIcon
                     :name="tech.icon"
-                    class="text-4xl md:text-5xl text-yellow-400 dark:text-gray-500 mb-2 transition-all duration-300 group-hover:text-white group-hover:scale-110"
+                    class="text-4xl md:text-5xl text-neutral-300 dark:text-gray-500 mb-2 transition-all duration-300 dark:group-hover:text-white group-hover:text-primary-500 group-hover:scale-110"
                 />
                 <span
-                    class="absolute bottom-0 whitespace-nowrap text-white font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
+                    class="absolute bottom-0 whitespace-nowrap dakr:text-white text-primary-600 font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
                 >
                     {{ tech.name }}
                 </span>

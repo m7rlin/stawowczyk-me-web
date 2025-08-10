@@ -41,7 +41,7 @@ const socialLinks = [
         >
             <UIcon
                 :name="link.icon"
-                class="text-2xl text-gray-500 transition-colors duration-300 hover:text-white"
+                class="text-2xl dark:text-gray-500 text-gray-400 transition-colors duration-300 dark:hover:text-white hover:text-gray-500"
             />
         </a>
     </div>

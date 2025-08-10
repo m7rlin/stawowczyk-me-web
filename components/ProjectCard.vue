@@ -25,7 +25,7 @@ defineProps({
         <!-- Project Details -->
         <div class="col-span-1 sm:col-span-3">
             <div class="flex items-baseline space-x-3">
-                <h3 class="text-2xl font-bold text-white">
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
                     {{ project.name }}
                 </h3>
                 <!-- Added project dates here -->
@@ -39,9 +39,13 @@ defineProps({
                 </span>
             </div>
             <!-- Subtitle on a new line for better readability -->
-            <p class="text-neutral-500 text-sm mt-1">{{ project.subtitle }}</p>
+            <p class="dark:text-neutral-500 text-neutral-400 text-sm mt-1">
+                {{ project.subtitle }}
+            </p>
 
-            <ul class="mt-4 space-y-2 list-disc list-inside text-gray-300">
+            <ul
+                class="mt-4 space-y-2 list-disc list-inside dark:text-gray-300 text-neutral-500"
+            >
                 <li v-for="point in project.description" :key="point">
                     {{ point }}
                 </li>

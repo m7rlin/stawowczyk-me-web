@@ -7,7 +7,7 @@
         'relative' is needed to position the images inside it.
         -->
         <div
-            class="group relative w-24 h-24 rounded-full border-2 border-gray-700 bg-gray-800 p-1"
+            class="group relative w-24 h-24 rounded-full border-2 dark:border-gray-700 border-gray-300 dark:bg-gray-800 bg-gray-100 p-1"
         >
             <!-- The container for the images, ensuring they are clipped to the circle shape -->
             <div class="relative h-full w-full overflow-hidden rounded-full">
@@ -29,7 +29,9 @@
             </div>
         </div>
 
-        <h1 class="text-5xl font-bold">Marcin Stawowczyk</h1>
+        <h1 class="text-5xl font-bold text-gray-900 dark:text-white">
+            Marcin Stawowczyk
+        </h1>
         <p class="text-xl text-gray-400">
             Full-Stack Software Developer specialized in Nuxt
         </p>
