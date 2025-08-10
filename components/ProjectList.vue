@@ -127,10 +127,12 @@ const allProjects = [
 const visibleProjects = computed(() =>
     allProjects.slice(0, visibleProjectsCount.value)
 );
-const hasMoreProjects = computed(
-    () => visibleProjectsCount.value < allProjects.length
-);
-
+const previewProject = computed(() => {
+    if (visibleProjectsCount.value < allProjects.length) {
+        return allProjects[visibleProjectsCount.value];
+    }
+    return null;
+});
 const showMoreProjects = () => {
     visibleProjectsCount.value = allProjects.length;
 };
@@ -141,13 +143,24 @@ const showMoreProjects = () => {
         <!-- 2-column grid for Full HD screens (2xl) and wider -->
         <div class="grid grid-cols-1 2xl:grid-cols-2 gap-x-16 gap-y-12">
             <ProjectCard
-                v-for="project in visibleProjects"
+                v-for="(project, index) in visibleProjects"
                 :key="project.name"
                 :project="project"
+                v-motion
+                :initial="{ opacity: 0, y: 30 }"
+                :enter="{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                        duration: 500,
+                        ease: 'easeOut',
+                        delay: (index % 4) * 100,
+                    },
+                }"
             />
         </div>
 
-        <div v-if="hasMoreProjects" class="text-center mt-16">
+        <div v-if="previewProject" class="text-center mt-16">
             <UButton
                 @click="showMoreProjects"
                 size="lg"

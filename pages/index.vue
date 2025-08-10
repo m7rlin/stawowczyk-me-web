@@ -1,15 +1,27 @@
+<script setup lang="ts"></script>
+
 <!-- pages/index.vue -->
 <template>
     <div class="bg-gray-900 text-white min-h-screen font-sans">
         <UContainer>
             <!-- Header Section -->
             <header class="pt-16 text-center">
-                <UserAvatar />
+                <div
+                    v-motion
+                    :initial="{ opacity: 0, y: 20 }"
+                    :enter="{
+                        opacity: 1,
+                        y: 0,
+                        transition: { duration: 700, ease: 'easeOut' },
+                    }"
+                >
+                    <UserAvatar />
 
-                <!-- New Components Added Here -->
-                <div class="mt-12 space-y-8">
-                    <CallToAction />
-                    <SocialLinks />
+                    <!-- New Components Added Here -->
+                    <div class="mt-12 space-y-8">
+                        <CallToAction />
+                        <SocialLinks />
+                    </div>
                 </div>
             </header>
         </UContainer>
@@ -23,7 +35,21 @@
             <main>
                 <!-- Projects Section -->
                 <section>
-                    <SectionTitle title="My Projects" class="mb-16" />
+                    <div
+                        v-motion
+                        :initial="{ opacity: 0, y: 20 }"
+                        :enter="{
+                            opacity: 1,
+                            y: 0,
+                            transition: {
+                                duration: 700,
+                                delay: 300,
+                                ease: 'easeOut',
+                            },
+                        }"
+                    >
+                        <SectionTitle title="My Projects" class="mb-16" />
+                    </div>
                     <ProjectList />
                 </section>
             </main>

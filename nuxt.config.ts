@@ -10,6 +10,7 @@ export default defineNuxtConfig({
         '@nuxt/scripts',
         '@nuxt/ui',
         '@vueuse/nuxt',
+        '@vueuse/motion/nuxt',
     ],
 
     app: {
