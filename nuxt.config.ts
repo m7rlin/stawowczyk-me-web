@@ -11,6 +11,7 @@ export default defineNuxtConfig({
             {
                 provider: 'ipx',
                 // assets: '/public',
+                format: ['webp'],
             },
         ],
         '@nuxt/scripts',
@@ -28,7 +29,7 @@ export default defineNuxtConfig({
             htmlAttrs: {
                 lang: 'en',
             },
-            viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+            viewport: 'width=device-width, initial-scale=1',
             link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
         },
     },
@@ -86,11 +87,11 @@ export default defineNuxtConfig({
     nitro: {
         prerender: {
             routes: [
-                '/_ipx/_/img/sanktjakobvillach5.png',
-                '/_ipx/_/img/gachowetz1.png',
-                '/_ipx/_/img/magictm1.png',
-                '/_ipx/_/img/mebleg1.png',
-                '/_ipx/_/img/translatorklotz1.png',
+                '/_ipx/f_webp/img/sanktjakobvillach5.png',
+                '/_ipx/f_webp/img/gachowetz1.png',
+                '/_ipx/f_webp/img/magictm1.png',
+                '/_ipx/f_webp/img/mebleg1.png',
+                '/_ipx/f_webp/img/translatorklotz1.png',
             ],
         },
     },
