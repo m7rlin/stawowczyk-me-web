@@ -71,6 +71,6 @@ We reserve the right to make changes to this privacy policy at any time. Any cha
 
 ## Contact Information
 
-If you have any questions about this privacy policy, please contact us at: [**contakt@stawowczyk.me**](mailto:contakt@stawowczyk.me).
+If you have any questions about this privacy policy, please contact us at: [**contact@stawowczyk.me**](mailto:contact@stawowczyk.me).
 
 This privacy policy was last updated on 17 April 2023 and is effective from that date.
