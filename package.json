@@ -13,9 +13,11 @@
     "dependencies": {
         "@iconify-json/simple-icons": "^1.2.46",
         "@nuxt/content": "3.6.3",
+        "@nuxt/fonts": "0.11.4",
         "@nuxt/image": "1.11.0",
         "@nuxt/scripts": "0.11.10",
         "@nuxt/ui": "3.3.0",
+        "@nuxtjs/seo": "3.1.0",
         "@unhead/vue": "^2.0.3",
         "@vueuse/motion": "^3.0.3",
         "@vueuse/nuxt": "13.6.0",
@@ -28,6 +30,12 @@
     },
     "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
     "devDependencies": {
-        "@iconify-json/heroicons": "^1.2.2"
+        "@iconify-json/heroicons": "^1.2.2",
+        "@tailwindcss/typography": "^0.5.16"
+    },
+    "pnpm": {
+        "overrides": {
+            "sharp": "0.33.5"
+        }
     }
 }

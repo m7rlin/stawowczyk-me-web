@@ -3,10 +3,6 @@
 <!-- pages/index.vue -->
 <template>
     <div class="dark:bg-gray-900 bg-white text-white min-h-screen font-sans">
-        <div class="absolute top-4 right-4 z-20">
-            <ColorModeSwitch />
-        </div>
-
         <UContainer>
             <!-- Header Section -->
             <header class="pt-16 text-center">
