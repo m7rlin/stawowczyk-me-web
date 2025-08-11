@@ -35,7 +35,8 @@
             Marcin Stawowczyk
         </h1>
         <p class="text-xl text-gray-400">
-            Full-Stack Software Developer specialized in Nuxt
+            Full-Stack Software Developer specialized in Nuxt<br />Located in
+            Innsbruck
         </p>
     </div>
 </template>
