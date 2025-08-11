@@ -25,7 +25,9 @@ defineProps({
         <!-- Project Details -->
         <div class="col-span-1 sm:col-span-3">
             <div class="flex items-baseline space-x-3">
-                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                <h3
+                    class="text-2xl font-bold text-gray-900 dark:text-white font-heading"
+                >
                     {{ project.name }}
                 </h3>
                 <!-- Added project dates here -->

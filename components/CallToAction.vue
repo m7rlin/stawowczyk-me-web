@@ -11,7 +11,7 @@ import { CONTACT_ME_EMAIL, AVAILABLE_FOR_NEW_PROJECTS } from '~/constants';
             :to="'mailto:' + CONTACT_ME_EMAIL"
             label="Contact Me"
             size="lg"
-            color="neutral"
+            color="primary"
             variant="soft"
         />
 

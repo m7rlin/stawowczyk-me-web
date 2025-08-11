@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+    title: 'Nuxt Expert located in Innsbruck',
+});
+</script>
 
 <!-- pages/index.vue -->
 <template>

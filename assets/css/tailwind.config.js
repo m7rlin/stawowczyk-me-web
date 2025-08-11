@@ -8,6 +8,12 @@ module.exports = {
     darkMode: 'class',
     theme: {
         extend: {
+            fontFamily: {
+                sans: ["'Inter'"],
+                heading: ["'Poppins'"],
+                mono: ["'JetBrains Mono'"],
+            },
+
             typography: (theme) => ({
                 DEFAULT: {
                     css: {

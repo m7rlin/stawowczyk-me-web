@@ -9,7 +9,9 @@ defineProps({
 </script>
 
 <template>
-    <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white">
+    <h2
+        class="text-3xl font-bold text-center text-gray-900 dark:text-white font-heading"
+    >
         {{ title }}
     </h2>
 </template>

@@ -29,7 +29,9 @@
             </div>
         </div>
 
-        <h1 class="text-5xl font-bold text-gray-900 dark:text-white">
+        <h1
+            class="text-5xl font-bold text-gray-900 dark:text-white font-heading"
+        >
             Marcin Stawowczyk
         </h1>
         <p class="text-xl text-gray-400">
