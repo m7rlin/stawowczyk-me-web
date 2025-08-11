@@ -12,8 +12,10 @@ defineProps({
         <div class="col-span-1">
             <!-- Using a placeholder for the thumbnail -->
             <NuxtImg
+                format="webp"
                 class="aspect-video bg-gray-700 rounded-md flex items-center justify-center"
                 :src="project.thumbnail || ''"
+                :alt="project.name"
             >
                 <UIcon
                     name="i-heroicons-photo"

@@ -2,6 +2,10 @@
 useHead({
     title: 'Nuxt Expert located in Innsbruck',
 });
+useSeoMeta({
+    description:
+        'Full-Stack Software Developer localed in Innsbruck with more then 12 years of experience.',
+});
 </script>
 
 <!-- pages/index.vue -->
