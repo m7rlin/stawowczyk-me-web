@@ -9,8 +9,6 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-
 const visible = ref(false);
 
 const scrollListener = () => {
